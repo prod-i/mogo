@@ -38,7 +38,7 @@ $(function(){
   $('[data-scroll]').on('click', function(event){
     event.preventDefault();
     const blockId = $(this).data('scroll');
-    const blockOffset = $(blockId).offset().top;
+    const blockOffset = $(blockId).offset().top - 20;
 
     $('.nav a').removeClass('active');
     $(this).addClass('active');
