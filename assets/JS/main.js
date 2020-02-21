@@ -2,7 +2,7 @@ $(function(){
 
   const header = $('.header');
   const introHeight = $('.intro').innerHeight();
-  let scrollOffset = $(window).scrollTop()  - 20;
+  let scrollOffset = $(window).scrollTop()  - 30;
 
 
 { //  FIXED HEADER
