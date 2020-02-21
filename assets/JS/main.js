@@ -2,7 +2,7 @@ $(function(){
 
   const header = $('.header');
   const introHeight = $('.intro').innerHeight();
-  let scrollOffset = $(window).scrollTop();
+  let scrollOffset = $(window).scrollTop()  - 20;
 
 
 { //  FIXED HEADER
@@ -38,7 +38,7 @@ $(function(){
   $('[data-scroll]').on('click', function(event){
     event.preventDefault();
     const blockId = $(this).data('scroll');
-    const blockOffset = $(blockId).offset().top - 20;
+    const blockOffset = $(blockId).offset().top;
 
     $('.nav a').removeClass('active');
     $(this).addClass('active');
