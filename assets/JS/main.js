@@ -2,7 +2,7 @@ $(function(){
 
   const header = $('.header');
   const introHeight = $('.intro').innerHeight();
-  let scrollOffset = $(window).scrollTop()  - 30;
+  let scrollOffset = $(window).scrollTop();
 
 
 { //  FIXED HEADER
@@ -10,7 +10,7 @@ $(function(){
 
   $(window).on('scroll',function(){
     scrollOffset = $(this).scrollTop();
-    checkScroll(scrollOffset);
+    checkScroll(scrollOffset)  - 30;
   });
 
   function checkScroll(scrollOffset){
